@@ -27,3 +27,24 @@
 Cypress.Commands.add('clickOnTab' , (tabText)=>{
     cy.contains('a', tabText).should("be.visible").click();
 })
+
+
+Cypress.Commands.add('validateIntercept' , (alias)=>{
+    const arrayAlias  = Array.isArray(alias)?alias : [alias] // if its single convert it as an array 
+    arrayAlias.forEach((alias)=>{
+        cy.wait(alias).then((interception) =>{
+           expect(interception.response.statusCode).to.eq(200);
+        })
+    })
+})
+
+Cypress.Commands.add('clickContinue',()=>{
+    cy.get('body').then(($body)=>{
+        if(cy.wrap($body).contains('Continue Shopping')){
+            cy.wrap($body).contains('Continue Shopping').click();
+        }
+        else{
+            "Item added to cart directly";
+        }
+    })
+})

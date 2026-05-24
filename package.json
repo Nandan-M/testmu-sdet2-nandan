@@ -15,6 +15,18 @@
     "cypress-plugin-api": "^2.11.2"
   },
   "devDependencies": {
-    "cypress-iframe": "^1.0.1"
-  }
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2"
+  },
+  "scripts": {
+
+  "cy:open": "cypress open",
+
+  "cy:run": "cypress run",
+
+  "test:report": "cypress run"
+}
 }

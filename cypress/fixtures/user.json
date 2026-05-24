@@ -1,0 +1,12 @@
+[
+    {
+        "type": "valid",
+        "email":"mungandla2@gmail.com",
+        "password":"Nandan@9399"
+    },
+    {
+        "type":"invalid",
+        "email":"mungandla777@gmail.com",
+        "password":"Nandan@9"
+    }
+]
