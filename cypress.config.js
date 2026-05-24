@@ -51,7 +51,7 @@ module.exports = defineConfig({
       }
     }
     else{
-      config.baseUrl= process.env.baseUrl;
+      config.baseUrl= process.env.BASEURL;
        config.env = {
                     ...config.env,
                     email: process.env.EMAIL,
