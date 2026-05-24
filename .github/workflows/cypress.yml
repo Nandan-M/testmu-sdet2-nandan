@@ -23,7 +23,10 @@ jobs:
           node-version: 20
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
+
+      - name: Install cypress binary
+        run : npx cypress install
 
       - name: Run Cypress Tests
         run: npx cypress run --env configFile=qa
