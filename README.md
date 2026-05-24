@@ -50,20 +50,16 @@ https://automationexercise.com
 - Product Search
 - Cart Management
 - Checkout Flow
-- Form Validations
 
 ---
 
 ## API Testing
 
-- User Creation
+
 - Login Verification
 - Product APIs
-- CRUD Operations
 - Negative Testing
 - Response Validation
-- Response Time Assertions
-
 ---
 
 ## Integration Testing
@@ -88,8 +84,7 @@ cypress/
  │
  └── support/
       ├── api/
-      ├── utils/
-      └── assertions/
+     
 ```
 
 ---
